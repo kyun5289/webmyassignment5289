@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+a {
+  text-decoration: none;
+  color: inherit;
+}
+table, tr, th, td {
+    margin:auto;
+    border: solid 0px rgb(0, 0, 0);
+    color:rgb(17, 17, 17);
+	border-collapse: collapse;
+    text-align: left;
+	padding: 4px;
+}
+
+.model_search{
+    background-color: rgb(46, 46, 46);
+    width: 200px; 
+    height: 10px; 
+    color:antiquewhite;
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 10px; 
+}
+
+
+.clear{clear: both;}
+li{ list-style-type: none;}
+body{background-color: black;}
+header{
+width: 1300px;
+height: 120px;
+margin: 0 auto;
+}
+#logo{
+    float: left;
+}
+#menus{
+    float: right;
+    width: 100px;
+    height: 38px;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    line-height: 38px;
+    border: solid 1px gray;
+    margin-left: 20px;
+}
+#signin{
+    float: right;
+    width: 100px;
+    height: 38px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 20px;
+}
+
+
+section{
+    margin: 0 auto;
+    width:1300px;
+    height:700px;
+    border: solid 0px aliceblue;
+}
+
+.search_box{
+    margin-top: 8px;
+    margin-left: 20px;
+    background-color: rgb(46, 46, 46);
+    width: 805px; 
+    height: 20px; 
+    color:antiquewhite;
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 10px; 
+}
+
+#main_menus{
+    float:left;
+    margin-top: 8px;
+    margin-left: 20px;
+    color:azure;
+}
+
+#navi_box{
+    margin-top: 8px;
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: rgb(46, 46, 46);
+    border:solid 1px seashell;
+    width:335px;
+    height:40px;
+}
+
+#category{
+    float:left;
+    width:250px;
+    height:580px;
+    border:solid 0px seashell;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+#cate_in{
+    width:250px;
+    height:170px;
+    border:solid 1px seashell; border-radius: 30px;
+    margin-top: 20px;
+    background-color: rgb(255, 252, 209);
+}
+
+#sort_price_pages{
+    margin-top: 20px; margin-left: 40px;
+    float:left;
+    width: 890px;
+    height:40px;
+    border:solid 0px seashell; 
+}
+
+#sort{
+    float: left;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+    line-height: 40px;
+    background-color:rgb(28, 121, 0);
+    border:solid 1px rgb(59, 252, 0);  
+}
+
+#price{
+    float: left;
+    margin-left: 10px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+    line-height: 40px;
+    background-color:rgb(0, 93, 121);
+    border:solid 1px rgb(0, 138, 180);  
+}
+
+#range{
+    float: right;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+    line-height: 40px;
+    background-color:rgb(80, 117, 102);
+    border:solid 1px rgb(0, 255, 149);  
+}
+
+#in_themodel_box{
+    float:left;
+    width:890px;
+    height:550px;
+    border:solid 1px rgb(255, 136, 51);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+#models{
+    color:blanchedalmond;
+    margin-top: 5px;
+    width:885px;
+    height:130px;
+    border:solid 0px red;
+}
+
+#model_img{
+    float:left;
+    border:solid 1px rgb(75, 75, 75);
+    border-radius: 30%;
+    margin-left: 10px;
+}
+
+#model_exp{
+    float:left;
+    margin-left: 30px;
+}
+
+#model_name{
+    float:left;
+}
+
+#model_line{
+    float:left;
+    color:rgb(128, 128, 128);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+#model_tag{
+    float:left;
+    color:rgb(128, 128, 128);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#model_detail{
+    float:right;
+    border: solid 1px red;
+    margin-right: 20px;
+}
+
+#model_godetail{
+    float:right;
+    width: 150px;
+    height: 110px;
+    border: solid 0px red;
+    margin-right: 10px; margin-top: 10px;
+}
+
+#model_user{
+    font-size: 13px;
+    text-align: left;
+}
+
+#model_godetail_button{
+    width: 120px;
+    height: 30px;
+    color: rgb(120, 246, 255);
+    background-color: rgb(26, 0, 51);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 0px red;
+    margin-left: 15px; margin-top: 15px;
+}
+
+
+
+
+
+footer{
+    width: 1300px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#footmen li{
+    float:left;
+    font-size: 15px;
+    color:gray;
+    display: inline;
+    margin:0 10px 0 10px; 
+}
+
+#one{
+    float:right;
+    font-size: 15px;
+    color:gray;
+    margin:0 10px 0 10px; 
+}
+
+</style>
+</head>
+<body>
+<header>
+    <div id="logo"> <a href="../index1.html"><img src='../img/logo.png' height="90"/> </a></div>
+    <nav>
+        <div id="signin"><a href="../signin/login.html">Sign in</a></div>
+        <div id="menus"><a href="../settings/setting0.html">Settings</a></div>
+        <div id="menus"><a href="../market/market.html">Discover!</a></div>
+        <div id="menus"><a href="../donate/donatemain.html">Donate</a></div>
+        <div id="menus">Application!</div>
+    </nav>
+</header>
+<section>
+    <div style="display: flex; border: solid 0px whitesmoke;">
+    <div id="navi_box">
+        <div id="main_menus"><a href="../main.html">Main menu</a></div>
+        <div id="main_menus">|</div>
+        <div id="main_menus"><a href="../mypage/mypage.html">My page</a></div>
+        <div id="main_menus">|</div>
+        <div id="main_menus"><a href="../market/market.html">Ai Store</a></div>
+    </div>
+    <input type="text" class="search_box" placeholder=" 🔍 Discover new models..." style="border: solid 2px rgb(17, 193, 216);">
+    </div>
+
+    <div id="category">
+        <div id="cate_in"> 
+            <table style="margin-top:10px;">
+                <tr>
+                    <th>Used models</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="model_search" placeholder="🔍Used Language models...." style="border: solid 2px rgb(17, 193, 216);">
+                    </td>
+                </tr>
+                <tr>
+                    <td> - Deepseek R1
+                    <br> - Lama 3 
+                    <br> - kimgahyun 1
+                </td>
+                </tr>
+            </table>
+        </div>
+        <div id="cate_in">
+            <table style="margin-top:10px;">
+                <tr>
+                    <th>Categories​</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="model_search" placeholder="🔍Search Categories..." style="border: solid 2px rgb(17, 193, 216);">
+                    </td>
+                </tr>
+                <tr>
+                    <td> - Philosophy​
+                    <br> - Anime ​ 
+                    <br> - Boy
+                </td>
+                </tr>
+            </table>
+        </div>
+        <div id="cate_in" style="height: 150px;"> 
+            <table style="margin-top:10px;">
+                <tr>
+                    <th>Likes and Users​</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="model_search" placeholder="Likes ​" style="border: solid 2px rgb(17, 193, 216);">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="model_search" placeholder="Users​" style="border: solid 2px rgb(17, 193, 216);">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div id="sort_price_pages">
+        <div id="sort"> <span style="font-weight:bold;">Sort by:</span> Relevance</div>
+        <div id="price"> <span style="font-weight:bold;">Price Range:</span> 5 ~ 100</div>
+        <div id="range"> <span style="font-weight:bold;">&lt; &emsp; 1 &emsp; 2 &emsp; 3 &emsp; -- &emsp; 555 &emsp; &gt;</span></div>
+    </div>
+
+    <div id="in_themodel_box">
+            <div id="model_box">
+
+        <div id="models" style="border-bottom:dotted rgb(0, 255, 179);"> 
+            <div id="model_img"> <img src="./models/naruto.jpg" style="width: 110px; border-radius: 30%;"></div>
+            <div id="model_exp"> 
+                <div style="margin-top: 5px;"> </div>
+                <span id="model_name">Naruto Uzumaki </span><span id="model_line"> &nbsp; by yoshida</span> <br>
+                <div id="model_line">I'm Naruto Uzumaki from the Hidden Leaf Village! I grew up alone, 
+                                    <br> but I never gave up. I train hard every day to become Hokage and 
+                                    <br>earn everyone's respect. Believe it!</div> <br>
+                <div id="model_tag"> #anime #ninja #naruto​</div>
+            </div>
+            <div id="model_godetail">
+                <div id="model_user">124.3M &emsp; &emsp; &emsp; &nbsp; USERS<br>
+                                    60M &emsp; &emsp; &emsp; &emsp; &ensp; LIKES <br>
+                                    Price &nbsp;: &nbsp;200$ </div>
+                <div id="model_godetail_button"> View Details </div>
+            </div>
+        </div>
+
+        <div id="models" style="border-bottom:dotted rgb(0, 255, 179);"> 
+            <div id="model_img"> <img src="./models/Elon_Musk.jpg" style="width: 110px; height: 110px; border-radius: 30%;"></div>
+            <div id="model_exp"> 
+                <div style="margin-top: 5px;"> </div>
+                <span id="model_name">Elon Musk </span><span id="model_line"> &nbsp; by elon mom​</span> <br>
+                <div id="model_line">I'm Elon Musk, entrepreneur and engineer!
+                                <br>I founded Tesla and SpaceX to push the limits of technology, 
+                                <br>explore space, and build a sustainable future for humanity.</div> <br>
+                <div id="model_tag">  #strongman #technoking</div>
+            </div>
+            <div id="model_godetail">
+                <div id="model_user">114.3M &emsp; &emsp; &emsp; &nbsp; USERS<br>
+                                    14M &emsp; &emsp; &emsp; &emsp; &ensp; LIKES <br>
+                                    Price &nbsp;: &nbsp;140$ </div>
+                <div id="model_godetail_button"> View Details </div>
+            </div>
+        </div>
+
+        <div id="models" style="border-bottom:dotted rgb(0, 255, 179);"> 
+            <div id="model_img"> <img src="./models/john.jpg" style="width: 110px; height: 110px; border-radius: 30%;"></div>
+            <div id="model_exp"> 
+                <div style="margin-top: 5px;"> </div>
+                <span id="model_name"> John rawls </span><span id="model_line"> &nbsp; by the father of john​</span> <br>
+                <div id="model_line">I'm John Rawls, a political philosopher known for 'A Theory of Justice.'  
+                                    <br>I argue for fairness, equality, and justice through the veil of ignorance 
+                                    <br>thought experiment.
+                                    </div> <br>
+                <div id="model_tag">  #justice #philosopher</div>
+            </div>
+            <div id="model_godetail">
+                <div id="model_user">15.3B &emsp; &emsp; &emsp; &nbsp; USERS<br>
+                                    600M &emsp; &emsp; &emsp; &emsp; &ensp; LIKES <br>
+                                    Price &nbsp;: &nbsp;300$ </div>
+                <div id="model_godetail_button"> <a href="market_detail.html">View Details </a></div>
+            </div>
+        </div>
+
+                <div id="models"> 
+            <div id="model_img"> <img src="./models/nell.jpg" style="width: 110px; height: 110px; border-radius: 30%;"></div>
+            <div id="model_exp"> 
+                <div style="margin-top: 5px;"> </div>
+                <span id="model_name"> Nelson Mandela </span><span id="model_line"> &nbsp; by EEF​</span> <br>
+                <div id="model_line">I’m Nelson Mandela, a freedom fighter from South Africa. I spent 27 years in prison 
+                                    <br>and later became president, working to unite a divided nation through peace and 
+                                    <br>reconciliation.
+                                    </div> <br>
+                <div id="model_tag">  #justice #FreedomFighter #HumanRights </div>
+            </div>
+            <div id="model_godetail">
+                <div id="model_user">114.3M &emsp; &emsp; &emsp; &nbsp; USERS<br>
+                                    14M &emsp; &emsp; &emsp; &emsp; &ensp; LIKES <br>
+                                    Price &nbsp;: &nbsp;140$ </div>
+                <div id="model_godetail_button"> View Details </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</section>
+<footer>
+    <ul id="footmen">
+        <li><a href="../terms/terms.html">Terms of Use</a></li>
+        <li>|</li>
+        <li><a href="../terms/Privacy.html">Copyright policy​</a></li>
+        <li>|</li>
+        <li><a href="../terms/Copyright.html">Privacy policy</a>​</li>
+    </ul>
+    <div id="one">2025 kimgahyun. All rights reserved.</div>
+</footer>
+</body>
